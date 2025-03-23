@@ -1,12 +1,6 @@
 @import url('css/reset.css');
 @import url('css/fonts.css');
 
-body{
-   font-family: Poppins;
-   font-weight: 400;
-   font-size: 18px;
-   color: #808080;
-}
 h1{
    font-family: KoPubBatang;
    color: #000;
