@@ -1,0 +1,33 @@
+@import url('css/reset.css');
+@import url('css/fonts.css');
+
+body{
+   font-family: Poppins;
+   font-weight: 400;
+   font-size: 18px;
+   color: #808080;
+}
+h1{
+   font-family: KoPubBatang;
+   color: #000;
+   text-shadow: 0 0 5px rgb(88, 88, 88);
+   font-weight: 400;
+   text-align: center;
+}
+h2{
+   font-family: Dancing Script;
+   color: #000;
+   font-weight: 700;
+   font-size: 46px;
+}
+
+div{
+   font-family: KoPubBatang;
+   font-weight: 400;
+   font-size: 24px;
+   color: #000;
+   text-shadow: 0 5px 2px grey,
+   0 7px 2px rgb(101, 101, 101);
+
+   font-weight: 300;
+}
