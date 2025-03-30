@@ -54,6 +54,7 @@ body {
 	display: inline-block;
 	width: 230px;
 	margin-right: 30px;
+	position: relative;
 }
 .main-items {
 	padding: 35px 40px;
@@ -96,4 +97,12 @@ body {
 }
 .internal {
 	margin-right: 0;
+}
+.main__body-item.risk,
+.main__body-item.sox{
+	bottom: 24px;
+}
+.main__body-item.compliance,
+.main__body-item.internal{
+	top: 48px;
 }
