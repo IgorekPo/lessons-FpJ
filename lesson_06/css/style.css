@@ -151,7 +151,11 @@ body {
 }
 .contact-location {
 	padding-left: 65px;
-	background: url('../img/location.png') 0 0 / 65px no-repeat;
+	/* background-image: url('../img/location.png') 0 0 / 65px no-repeat; */
+	background-image: url('../img/location.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 65px;
 	height: 65px;
 	border-right: 1px solid rgba(192, 183, 232, 0.33);
 
