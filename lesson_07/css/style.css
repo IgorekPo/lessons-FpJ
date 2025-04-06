@@ -238,4 +238,11 @@ body {
 .game__body > *:not(img) {
 visibility:hidden;
 }
+
+
+.header,
+.footer{
+	color: #000;
+	text-align: center;
+}
 /* ================================ */
