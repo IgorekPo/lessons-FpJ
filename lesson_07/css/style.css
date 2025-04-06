@@ -139,3 +139,103 @@ body {
 	scale: 1.3;
 }
 /* ======================================= */
+
+
+/* ========GAME================== */
+
+.game__body {
+	background: url('../img/game/bg-game.jpg') 0 0 / 100% no-repeat;
+	background-size: 100%;
+	background-position: center;
+	overflow: hidden;
+}
+.start {
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+
+.level1__track {
+	width: 170px;
+	height: 35px;
+	margin-left: 24px;
+}
+.level2__track {
+	height: 135px;
+	width: 32px;
+	margin-left: 184px;
+}
+.level3__track {
+	width: 70px;
+	height: 35px;
+	margin-left: 184px;
+}
+.level4__track {
+	height: 80px;
+	width: 30px;
+	margin-left: 254px;
+	margin-top: -15px;
+}
+.level5__track {
+	width: 270px;
+	height: 39px;
+	margin-left: 254px;
+}
+.level6__track {
+	height: 180px;
+	width: 36px;
+	margin-left: 509px;
+}
+.level7__track {
+	width: 170px;
+	height: 33px;
+	margin-left: 508px;
+}
+.level8__track {
+	height: 100px;
+	width: 30px;
+	margin-left: 678px;
+	margin-top: -99px;
+}
+.level9__track {
+	width: 170px;
+	height: 35px;
+	margin-left: 678px;
+	margin-top: -114px;
+}
+.level10__track {
+	height: 180px;
+	width: 30px;
+	margin-left: 838px;
+}
+.level11__track {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	margin-left: 834px;
+}
+.game__body div:nth-child(odd){
+	background-color: #FFBE48;
+}
+.game__body div:nth-child(even){
+	background-color: #FE3F3F;
+}
+.finish {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin-left: 824px;
+	position: relative;
+}
+
+.game__body > img:first-of-type:hover + *,
+.game__body > div:hover + div[class*="__track"],
+.game__body > div[class*="__track"]:hover
+{
+  visibility: visible;
+}
+
+.game__body > *:not(img) {
+visibility:hidden;
+}
+/* ================================ */
