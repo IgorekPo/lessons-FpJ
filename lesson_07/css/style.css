@@ -1,0 +1,141 @@
+
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+	font-family: "Inter", sans-serif;
+	color: #fff;
+	font-weight: 400;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+.container {
+	max-width: 1201px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.faculty {
+	background: #412672;
+	width: 100%;
+
+
+}
+.body__faculty {
+	padding: 61px 0px 102px 0px;
+	margin: 0 -15px 0 -15px;
+
+}
+.faculty__tittles{
+	line-height: normal;
+	font-size: 38px;
+	margin-bottom: 31px;
+}
+.faculty__tittles>:last-child {
+	font-weight: 700;
+}
+
+.faculty__items {
+	width: 100%;
+	cursor: pointer;
+
+}
+.faculty__item {
+	display: inline-block;
+	max-width: 387px;
+	min-height: 476px;
+	padding: 20px;
+	background-color: #fff;
+	vertical-align: top;
+	transition: all .5s;
+}
+.faculty__item:hover {
+	background-color: #FFBE48;
+
+}
+.faculty__item{
+	margin-right: 15px;
+}
+.faculty__item:last-child{
+	margin-right: 0;
+}
+.faculty__item > * {
+	margin-bottom: 16px;
+}
+.faculty__item > *:last-child {
+	margin-bottom: 0;
+}
+.faculty__item-img {
+	max-width: 347px;
+}
+.faculty__item-img img{
+	width: 100%;
+}
+.faculty__item-tittle {
+	color: #000;
+	font-weight: 600;
+}
+.faculty__item-text {
+	color: #4F4F4F;
+}
+.faculty__item-link {
+	color: #FE3F3F;
+}
+
+
+
+/* ===========available=============== */
+
+.available {
+	margin: 55px 0;
+	color: #412672;
+}
+.container {
+}
+.available__body {
+	max-width: 518px;
+}
+.available__body > * {
+	margin-bottom: 20px;
+}
+.available__body > *:last-child {
+	margin-bottom: 0;
+}
+.available__tittle {
+	line-height: normal;
+	font-size: 34px;
+}
+.available__tittle span{
+	font-weight: 700;
+}
+.available__text {
+}
+.available__items {
+	line-height: 255%;
+	color: #4F4F4F;
+}
+.available__item {
+	cursor: pointer;
+	padding-left: 44px;
+}
+
+.available__item::before {
+	content: '';
+	background: url('../img/Frame.png') center / 29px no-repeat;
+	width: 29px;
+	height: 29px;
+	margin-right: 15px;
+	vertical-align: middle;
+	margin-left: -44px;
+	transition: all .5s;
+
+}
+
+.available__item:hover::before {
+	scale: 1.3;
+}
+/* ======================================= */
