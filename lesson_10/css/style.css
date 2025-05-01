@@ -1,0 +1,285 @@
+/* Підключення фрифтів */
+
+/* Google Fonts (Plugin) */
+/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap"); */
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Компоненти */
+@import url("button.css");
+/* .... */
+
+/* Основні стилі */
+body {
+	font-family: "Gilroy", sans-serif;
+	line-height: 1;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+}
+
+[class*="__container"] {
+	max-width: 1528px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* ===================================================== */
+
+.documentation {
+background: url('/img/bg.png') 0 center / 100% no-repeat;
+background-size: 100% 100%;
+position: relative;
+}
+.documentation__container {
+position: relative;
+}
+
+.documentation__container::before {
+content: url('/img/dot1.png');
+position: absolute;
+top: 376px;
+left: 30px;
+}
+.documentation__container::after {
+content: url('/img/dot2.png');
+position: absolute;
+top: 752px;
+right: 0;
+}
+.documentation__audit.audit-documentation {
+text-align: start;
+
+}
+.documentation__risk.risk-documentation {
+text-align: end;
+}
+.audit-documentation__img {
+display: inline-block;
+margin-right: 70px;
+position: relative;
+top: -41px;
+left: 0;
+margin-left: 122px;
+vertical-align: middle;
+max-width: 430px;
+filter: drop-shadow(-25px 20px 44px rgba(84, 48, 209, 0.4));
+overflow: hidden;
+
+}
+.audit-documentation__img::before {
+content: url('/img/ellipse-s.png');
+position: absolute;
+top: 168px;
+left: -128px;
+}
+.audit-documentation__img::after {
+content: url('/img/ellipse-b.png');
+position: absolute;
+bottom: -66px;
+left: -108px;
+}
+.audit-documentation__img img{
+width: 100%;
+display: block;
+z-index: 2;
+position: relative;
+transition: all .5s;
+}
+.audit-documentation__img:hover img{
+scale: 1.1;
+}
+.risk-documentation__img {
+display: inline-block;
+margin-left: 70px;
+position: relative;
+bottom: 0;
+right: 0;
+vertical-align: middle;
+filter: drop-shadow(22px 42px 44px rgba(0, 0, 0, 0.30));
+max-width: 430px;
+margin-right: 154px;
+z-index: 2;
+}
+.risk-documentation__img::before {
+content: url('/img/ellipse-s.png');
+position: absolute;
+top: -48px;
+z-index: 3;
+left: 92px;
+}
+.risk-documentation__img::after {
+content: url('/img/ellipse-m.png');
+position: absolute;
+top: -26px;
+right: -129px;
+}
+.risk-documentation__img img {
+width: 100%;
+display: block;
+z-index: 2;
+position: relative;
+}
+.documentation__information {
+max-width: 602px;
+display: inline-block;
+vertical-align: middle;
+text-align: start;
+position: relative;
+
+}
+.documentation__tittle {
+color: #FFF;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 13px;
+}
+.documentation__text {
+color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 166%;
+margin-bottom: 39px;
+max-width: 480px;
+}
+.documentation__button {
+color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+background-color: #F35B09;
+padding: 22px 26px;
+border-radius: 60px;
+transition: all .5s;
+box-sizing: border-box;
+}
+.documentation__button:hover {
+background-color: #fff;
+color: #F35B09;
+outline: 1px solid #F35B09;
+}
+
+.footer{
+background-color: #F35B09;
+}
+
+.footer__text{
+padding: 60px 0;
+color: #FFF;
+font-size: 28px;
+text-align: center;
+text-transform: uppercase;
+font-weight: 600;
+}
+
+.header__text{
+padding: 60px 0;
+color: #FFF;
+font-size: 28px;
+text-align: center;
+text-transform: uppercase;
+font-weight: 600;
+}
+
+header{
+background-color: black;
+}
+
+
+.card {
+padding: 80px 0;
+}
+.card__container {
+cursor: pointer;
+border: 1px solid #E6E6E6;
+transition: all .5s;
+max-width: 264px;
+
+}
+.card__photo {
+padding: 5px;
+position: relative;
+}
+.card__photo::before {
+content: " ";
+position: absolute;
+top: 57px;
+right: 11px;
+background: url('/img/ayes.svg') 0 0 / 40px no-repeat;
+width: 40px;
+height: 40px;
+transition: all .5s;
+}
+.card__photo::after {
+content: " ";
+position: absolute;
+top: 11px;
+right: 11px;
+background: url('/img/heart.svg') 0 0 / 40px no-repeat;
+width: 40px;
+height: 40px;
+transition: all .5s;
+}
+.card__img {
+width: 100%;
+overflow: hidden;
+}
+.card__info {
+padding: 12px;
+width: 100%;
+position: relative;
+}
+.card__info::after {
+content: " ";
+position: absolute;
+top: 14px;
+right: 14px;
+background: url('/img/bag1.svg') 0 0 / 40px no-repeat;
+width: 40px;
+height: 45px;
+padding-bottom: 5px;
+transition: all .5s;
+}
+
+.card__tittle {
+font-size: 14px;
+line-height: 150%;
+font-weight: 400;
+transition: all .5s;
+}
+.card__price {
+font-size: 16px;
+font-weight: 600;
+line-height: 150%;
+}
+
+.card__container:hover .card__tittle {
+color: #2C742F;
+}
+
+.card__container:hover {
+border: 1px solid #2C742F;
+box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+scale: 1.1;
+
+}
+
+.card__container:hover .card__info::after{
+background: url('/img/bag2.svg') 0 0 / 40px no-repeat;
+}
+
