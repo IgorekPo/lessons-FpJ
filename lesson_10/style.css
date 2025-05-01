@@ -4,10 +4,10 @@
 /* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap"); */
 
 /* Локальне підключення шрифтів */
-@import url("fonts.css");
+@import url("css/fonts.css");
 
 /* Скидання стилів */
-@import url("reset.css");
+@import url("css/reset.css");
 
 
 /* Основні стилі */
@@ -33,7 +33,7 @@ body {
 /* ===================================================== */
 
 .documentation {
-background: url('../img/bg.png') 0 center / 100% no-repeat;
+background: url('img/bg.png') 0 center / 100% no-repeat;
 background-size: 100% 100%;
 position: relative;
 }
@@ -42,13 +42,13 @@ position: relative;
 }
 
 .documentation__container::before {
-content: url('../img/dot1.png');
+content: url('img/dot1.png');
 position: absolute;
 top: 376px;
 left: 30px;
 }
 .documentation__container::after {
-content: url('../img/dot2.png');
+content: url('img/dot2.png');
 position: absolute;
 top: 752px;
 right: 0;
@@ -70,17 +70,15 @@ margin-left: 122px;
 vertical-align: middle;
 max-width: 430px;
 filter: drop-shadow(-25px 20px 44px rgba(84, 48, 209, 0.4));
-overflow: hidden;
-
 }
 .audit-documentation__img::before {
-content: url('../img/ellipse-s.png');
+content: url('img/ellipse-s.png');
 position: absolute;
 top: 168px;
 left: -128px;
 }
 .audit-documentation__img::after {
-content: url('../img/ellipse-b.png');
+content: url('img/ellipse-b.png');
 position: absolute;
 bottom: -66px;
 left: -108px;
@@ -108,14 +106,14 @@ margin-right: 154px;
 z-index: 2;
 }
 .risk-documentation__img::before {
-content: url('../img/ellipse-s.png');
+content: url('img/ellipse-s.png');
 position: absolute;
 top: -48px;
 z-index: 3;
 left: 92px;
 }
 .risk-documentation__img::after {
-content: url('../img/ellipse-m.png');
+content: url('img/ellipse-m.png');
 position: absolute;
 top: -26px;
 right: -129px;
@@ -154,7 +152,6 @@ max-width: 480px;
 .button {
 color: #FFF;
 text-align: center;
-font-family: Roboto;
 font-size: 18px;
 font-style: normal;
 font-weight: 500;
@@ -217,7 +214,7 @@ content: " ";
 position: absolute;
 top: 57px;
 right: 11px;
-background: url('../img/ayes.svg') 0 0 / 40px no-repeat;
+background: url('img/ayes.svg') 0 0 / 40px no-repeat;
 width: 40px;
 height: 40px;
 transition: all .5s;
@@ -227,7 +224,7 @@ content: " ";
 position: absolute;
 top: 11px;
 right: 11px;
-background: url('../img/heart.svg') 0 0 / 40px no-repeat;
+background: url('img/heart.svg') 0 0 / 40px no-repeat;
 width: 40px;
 height: 40px;
 transition: all .5s;
@@ -246,7 +243,7 @@ content: " ";
 position: absolute;
 top: 14px;
 right: 14px;
-background: url('../img/bag1.svg') 0 0 / 40px no-repeat;
+background: url('img/bag1.svg') 0 0 / 40px no-repeat;
 width: 40px;
 height: 45px;
 padding-bottom: 5px;
@@ -277,6 +274,6 @@ scale: 1.1;
 }
 
 .card__container:hover .card__info::after{
-background: url('../img/bag2.svg') 0 0 / 40px no-repeat;
+background: url('img/bag2.svg') 0 0 / 40px no-repeat;
 }
 
