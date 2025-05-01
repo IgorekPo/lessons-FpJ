@@ -129,7 +129,7 @@ display: block;
 z-index: 2;
 position: relative;
 }
-.documentation__information {
+.information {
 max-width: 602px;
 display: inline-block;
 vertical-align: middle;
@@ -137,7 +137,7 @@ text-align: start;
 position: relative;
 
 }
-.documentation__tittle {
+.tittle {
 color: #FFF;
 font-size: 36px;
 font-style: normal;
@@ -145,7 +145,7 @@ font-weight: 700;
 line-height: normal;
 margin-bottom: 13px;
 }
-.documentation__text {
+.text {
 color: #FFF;
 font-size: 18px;
 font-style: normal;
@@ -154,7 +154,7 @@ line-height: 166%;
 margin-bottom: 39px;
 max-width: 480px;
 }
-.documentation__button {
+.button {
 color: #FFF;
 text-align: center;
 font-family: Roboto;
@@ -168,7 +168,7 @@ border-radius: 60px;
 transition: all .5s;
 box-sizing: border-box;
 }
-.documentation__button:hover {
+.button:hover {
 background-color: #fff;
 color: #F35B09;
 outline: 1px solid #F35B09;
