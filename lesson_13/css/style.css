@@ -155,7 +155,7 @@ body {
 .available__item::before {
 	content: '';
 	align-self: flex-start;
-	background: url('/img/confir.png') 0 0 / 100% no-repeat;
+	background: url('../img/confir.png') 0 0 / 100% no-repeat;
 	flex-shrink: 0;
 	flex-grow: 0;
 	height: 29px;
