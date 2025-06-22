@@ -281,11 +281,15 @@ text-transform: uppercase;
 	align-items: start;
 	flex: 1 1 auto;
 }
+@media(max-width: 361px){
+	.news__informations {
+	padding: 24px 0;
+	}
+};
 .news__news {
 	display: flex;
 	justify-content: start;
 	align-items: center;
-
 	gap: 16px;
 }
 .news__news a{
@@ -342,10 +346,5 @@ text-transform: uppercase;
 @media(max-width: 767.98px){
 	.news__items{
 		gap: 0;
-	}
-};
-@media(max-width: 361px){
-	.news__informations {
-	padding: 24px 0;
 	}
 };
