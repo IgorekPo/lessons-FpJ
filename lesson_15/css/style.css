@@ -171,7 +171,12 @@ body {
 	opacity: 1;
 	visibility: visible;
 }
-
+@media(max-width: 768px){
+	.products__hover{
+		opacity: 1;
+		visibility: visible;
+	}
+};
 
 .like,
 .eye{
@@ -218,7 +223,10 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+.news__item:hover {
+	box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
 
+}
 
 .news__image{
 	position: relative;
@@ -232,8 +240,9 @@ body {
 	aspect-ratio: 424 / 324;
 	transition: all .5s;
 }
-
-
+.news__item:hover .news__image img{
+	transform: scale(1.2);
+}
 .news__data {
 	position: absolute;
 	width: 58px;
@@ -264,7 +273,7 @@ letter-spacing: 0.36px;
 text-transform: uppercase;
 }
 .news__informations {
-	padding: 24px ;
+	padding: 24px;
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
@@ -286,7 +295,9 @@ text-transform: uppercase;
 	font-weight: 400;
 	line-height: 1.5;
 }
-
+.news__news a:hover{
+	text-decoration: underline;
+}
 .news__food{
 	background: url('/img/food.png') left no-repeat;
 }
@@ -310,7 +321,9 @@ text-transform: uppercase;
 	line-height: 1.5;
 	transition: all .5s;
 }
-
+.news__item:hover .news__information {
+	color: #2C742F;
+}
 .news__link {
 	color: #00B207;
 	font-size: 16px;
@@ -323,47 +336,16 @@ text-transform: uppercase;
 	background: url('/img/arrow.png') right no-repeat;
 }
 
-
+.news__link:hover{
+	text-decoration: underline;
+}
 @media(max-width: 767.98px){
 	.news__items{
 		gap: 0;
 	}
-}
+};
 @media(max-width: 361px){
 	.news__informations {
-		padding: 24px 0;
-	}
-};
-.news__item:hover {
-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
-}
-.news__item:hover .news__image img{
-	transform: scale(1.2);
-}
-.news__news a:hover{
-text-decoration: underline;
-}
-.news__item:hover .news__information {
-color: #2C742F;
-}
-.news__link:hover{
-text-decoration: underline;
-}
-
-@media(hover: none){
-	.news__item:hover {
-	box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
-	}
-	.news__item:hover .news__image img{
-		transform: scale(1.2);
-	}
-	.news__news a:hover{
-	text-decoration: underline;
-	}
-	.news__item:hover .news__information {
-	color: #2C742F;
-	}
-	.news__link:hover{
-	text-decoration: underline;
+	padding: 24px 0;
 	}
 };
