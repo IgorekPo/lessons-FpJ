@@ -299,19 +299,19 @@ text-transform: uppercase;
 	text-decoration: underline;
 }
 .news__food{
-	background: url('/img/food.png') left no-repeat;
+	background: url('../img/food.png') left no-repeat;
 }
 .news__admin span{
 	color: #808080;
 }
 .news__admin {
-	background: url('/img/admin.png') left no-repeat;
+	background: url('../img/admin.png') left no-repeat;
 }
 
 
 
 .news__comments {
-	background: url('/img/coments.png') left no-repeat;
+	background: url('../img/coments.png') left no-repeat;
 }
 .news__information {
 	flex: 1 1 auto;
@@ -333,7 +333,7 @@ text-transform: uppercase;
 	padding-right: 27px;
 	display: flex;
 	justify-content: start;
-	background: url('/img/arrow.png') right no-repeat;
+	background: url('../img/arrow.png') right no-repeat;
 }
 
 .news__link:hover{
