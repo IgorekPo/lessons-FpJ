@@ -1,0 +1,369 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("reset.css");
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	color: #4D4D4D;
+	font-weight: 400;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: 1350px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* 
+.page__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	aspect-ratio: 312 / 280;
+} */
+
+/* =================================================== */
+
+.products {
+	padding-bottom: 60px;
+}
+.products__container {
+}
+.products__tittle {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	justify-content: space-between;
+	padding-bottom: 32px;
+}
+.products__tittle h2{
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 1.2;
+	color: #1A1A1A;
+}
+.products__tittle a{
+	background: url('../img/arrow.png') right no-repeat;
+	color: #00B207;
+	padding-right: 27px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5; 
+}
+.products__tittle:hover a{
+	text-decoration: underline;
+}
+
+.products__items {
+	display: flex;
+	flex-wrap: wrap;
+}
+.products__item {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	border: 1px solid #E6E6E6;
+	transition: all .5s;
+	margin-left: -1px;
+	flex: 1 1 265px;
+	justify-content: space-between;
+}
+.products__item--sale::before{
+	content: url('/img/sale.png');
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	max-width: 64px;
+}
+.products__image {
+	object-fit: contain;
+	aspect-ratio: 254 / 230;
+	padding: 5px;
+}
+.products__informations{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 5px;
+	padding: 12px;
+}
+.products__information {
+	display: flex;
+	flex-direction: column;
+}
+.bag{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #F2F2F2;
+	transition: all .5s;
+	flex: 0 0 40px;
+}
+.bag path{
+	stroke: #1A1A1A;
+	transition: all .5s;
+
+}
+.products__item:hover .bag {
+	background-color: #00B207;
+
+}
+.products__item:hover path{
+	stroke: #fff;
+}
+.products__name {
+	line-height: 1.5;
+	transition: all .5s;
+}
+.products__cost {
+	color: #1A1A1A;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	flex: 1 1 auto;
+}
+.products__cost.products__cost--sale::after{
+	content: '$20.99';
+	padding-left: 2px;
+	text-decoration: line-through;
+	color: #999;
+}
+.products__raiting {
+	max-width: 60px;
+}
+
+
+
+.products__hover {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s;
+}
+
+.products__item:hover .products__name{
+	color: #2C742F;
+}
+.products__item:hover{
+	box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+}
+
+.products__item:hover .products__hover{
+	opacity: 1;
+	visibility: visible;
+}
+
+
+.like,
+.eye{
+	transition: all .5s;
+}
+.like:hover{
+	scale: 1.2;
+}
+.eye:hover{
+	scale: 1.2;
+}
+
+@media (max-width: 429.98px){
+	.products__tittle{
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+		text-align: center;
+	}
+}
+/* ================================= */
+.news{
+	padding-bottom: 60px;
+}
+.news__tittle{
+	color: #1A1A1A;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 1.2;
+	padding-bottom: 32px;
+}
+
+.news__items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 24px;
+}
+.news__item {
+	border-radius: 8px;
+	max-width: 424px;
+	transition: all .5s;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.news__image{
+	position: relative;
+	overflow: hidden;
+	border-radius: 8px 8px 0 0;
+}
+.news__image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	aspect-ratio: 424 / 324;
+	transition: all .5s;
+}
+
+
+.news__data {
+	position: absolute;
+	width: 58px;
+	height: 58px;
+	display: flex;
+	flex-direction: column;
+	padding: 6px 15px 10px 15px;
+	align-items: center;
+	justify-content: center;
+	left: 24px;
+	bottom: 24px;
+	background-color: #fff;
+	border-radius: 4px;
+}
+.data-news {
+}
+.data-news__data {
+	color: #1A1A1A;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+.data-news__month {
+color: #808080;
+font-size: 12px;
+font-weight: 500;
+letter-spacing: 0.36px;
+text-transform: uppercase;
+}
+.news__informations {
+	padding: 24px ;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	min-height: 170px;
+	align-items: start;
+	flex: 1 1 auto;
+}
+.news__news {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+
+	gap: 16px;
+}
+.news__news a{
+	padding-left: 24px;
+	color: #4D4D4D;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.news__food{
+	background: url('/img/food.png') left no-repeat;
+}
+.news__admin span{
+	color: #808080;
+}
+.news__admin {
+	background: url('/img/admin.png') left no-repeat;
+}
+
+
+
+.news__comments {
+	background: url('/img/coments.png') left no-repeat;
+}
+.news__information {
+	flex: 1 1 auto;
+	color: #1A1A1A;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	transition: all .5s;
+}
+
+.news__link {
+	color: #00B207;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.2;
+	transition: all .5s;
+	padding-right: 27px;
+	display: flex;
+	justify-content: start;
+	background: url('/img/arrow.png') right no-repeat;
+}
+
+
+@media(max-width: 767.98px){
+	.news__items{
+		gap: 0;
+	}
+}
+@media(max-width: 361px){
+	.news__informations {
+		padding: 24px 0;
+	}
+};
+.news__item:hover {
+box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
+}
+.news__item:hover .news__image img{
+	transform: scale(1.2);
+}
+.news__news a:hover{
+text-decoration: underline;
+}
+.news__item:hover .news__information {
+color: #2C742F;
+}
+.news__link:hover{
+text-decoration: underline;
+}
+
+@media(hover: none){
+	.news__item:hover {
+	box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
+	}
+	.news__item:hover .news__image img{
+		transform: scale(1.2);
+	}
+	.news__news a:hover{
+	text-decoration: underline;
+	}
+	.news__item:hover .news__information {
+	color: #2C742F;
+	}
+	.news__link:hover{
+	text-decoration: underline;
+	}
+};
